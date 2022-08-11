@@ -4,8 +4,8 @@
 Первая строка входного файла INPUT.TXT содержит натуральное число N – количество строк и столбцов матрицы. В каждой из последующих N строк записаны N целых чисел – элементы матрицы.
  Все числа во входных данных не превышают 100 по абсолютной величине.
 */
-
-int [,] array = new int[5,5];
+int n = Convert.ToInt32(Console.ReadLine());
+int [,] array = new int[n,n];
 void PrintArray (int[,]array)
 {
 for (int i = 0; i < array.GetLength(0); i++)
